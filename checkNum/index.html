@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckNum</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter a Number" id="inp">
+    <button class="btn" onclick="checkNum()">check num</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function checkNum(){
+            var a = document.getElementById("inp").value;
+            if(a<0){
+                document.getElementById("result").innerHTML="Number in Negative";
+            }
+            else if(a>0){
+                document.getElementById("result").innerHTML="Number is Postive";
+            }
+            else{
+                document.getElementById("result").innerHTML="Number is Zero";
+            }
+        }
+    </script>
+</body>
+</html>
+
+

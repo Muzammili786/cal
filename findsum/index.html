@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Given Array: [1,-1,0,-3,5]</p>
+    <button onclick="findsum()">Find Sum</button>
+    <h1 id="result"></h1>
+    <script>
+        function findsum(){
+            var arr=[1.-1,0,-3,5];
+            sum=0;
+            arr.forEach(a =>{
+                if(a>0){
+                    document.getElementById("result").innerHTML=sum=sum+a;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
